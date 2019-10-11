@@ -5,7 +5,7 @@ const Tourist = mongoose.model("Tourist");
 
 router.get("/", (req, res) => {
   res.render("tourist/addOrEdit", {
-    viewTitle: "Insert Tourist"
+    viewTitle: "Insert Touristplace"
   });
 });
 
@@ -53,7 +53,7 @@ router.get("/:id", (req, res) => {
   Tourist.findById(req.params.id, (err, doc) => {
     if (!err) {
       res.render("tourist/addOrEdit", {
-        viewTitle: "Update Tourist",
+        viewTitle: "Update Touristplace",
         tourist: doc
       });
     }
@@ -74,7 +74,7 @@ router.get("/search/:id", (req, res) => {
   Tourist.findById(req.params.id, (err, doc) => {
     if (!err) {
       res.render("tourist/search", {
-        viewTitle: "Tourist Details",
+        viewTitle: "Touristplace Details",
         tourist: doc
       });
     }
