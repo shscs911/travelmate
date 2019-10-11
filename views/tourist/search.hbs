@@ -1,0 +1,23 @@
+<h3>{{viewTitle}}</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#tourist}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.city}}</td>
+        </tr>
+        {{/tourist}}
+    </tbody>
+</table>
+<div class="form-group">
+    <a class="btn btn-secondary" href="/tourist/list"><i class="fa fa-list-alt"></i> View All</a>
+</div>
