@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb://localhost:27017/TouristDB",
+  "mongodb+srv://shscs112:shscs112@kyc-fklxm.mongodb.net/TouristDB?retryWrites=true&w=majority",
   { useNewUrlParser: true },
   err => {
     if (!err) {
